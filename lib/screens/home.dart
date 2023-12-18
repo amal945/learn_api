@@ -38,6 +38,7 @@ class _HomeState extends State<Home> {
               ),
               title: Text(user.fullName),
               subtitle: Text(user.name.first),
+              trailing: Text(user.dob.date.toString()),
             );
           }),
     );
