@@ -33,8 +33,11 @@ class _HomeState extends State<Home> {
           ) {
             final user = users[index];
             return ListTile(
-              leading: CircleAvatar(
-                child: Image.network(user.picture.medium),
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: CircleAvatar(
+                  child: Image.network(user.picture.medium),
+                ),
               ),
               title: Text(user.fullName),
               subtitle: Text(user.name.first),
